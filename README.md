@@ -2,10 +2,6 @@
 
 ![Infrastructure Diagram](images/Terraform_Ansible.png)
 
-## Provisioning of Infrastructure using terraform
+Refer to my blog for the walkthrough:
 
-We first need to install and configure AWS CLI and Terraform to enable us to interact with  our AWS account.
-To download and install AWS CLI on Windows  
-1.	Download and run the MSI installer using this https://awscli.amazonaws.com/AWSCLIV2.msi
-2.	Confirm installation using aws –version command
-
+[Getting started with automation in AWS using Ansible and Terraform](https://medium.com/aws-tip/getting-started-with-automation-in-aws-using-ansible-and-terraform-c4679f070e5a)
