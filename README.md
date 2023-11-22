@@ -2,5 +2,4 @@
 
 ![Infrastructure Diagram](images/Terraform_Ansible.png)
 
-
 ## 
