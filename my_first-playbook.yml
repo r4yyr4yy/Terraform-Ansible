@@ -1,0 +1,17 @@
+---
+- name: Install and Start nginx
+  hosts: prod_servers # specifies that these tasks will run on all hosts defined in your inventory
+  become: true # enables privilege escalation, allowing the tasks to run with administrative (root) privileges
+  tasks:
+    - name: Update apt package cache # Update apt package 
+      apt:
+        update_cache: yes
+    - name: Install nginx # Install the Nginx package
+      apt:    
+        name: nginx
+        state: present # This task ensures that Nginx is installed on the target hosts if it's not already installed
+
+    - name: Start nginx
+      service:   # module to start the Nginx service
+        name: nginx
+        state: started # This task ensures that the Nginx service is running on the target hosts
